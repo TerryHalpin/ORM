@@ -1,0 +1,275 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>Object Role Modeling</title>
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<script language="JavaScript" type="text/javascript">
+	<!--  This HTML-style commenting-out hides the script from older, Javascript-incapable browsers
+
+		if (parent == self){  //The file is being shown in a top-level window instead of in a frame
+			var msg = "<p><HR size=4>You're looking at this page in a top-level window, rather than in a frame.<br />" + 
+				'However, this page was designed to show within a frame in the website it came from. <br /><br />' + 
+				'If you want to see the frames version of the website this page came from, <br />' + 
+				'and you have Javascript enabled in your browser or are willing to enable it for this site,<br />' + 
+				'please go to <a href="http://www.orm.net">www.orm.net<\/a>.<br /><br /><HR size=4><\/p>';
+			document.write(msg);
+		} 
+		else
+		{	parent.left.location.replace("left_menu.htm");
+			parent.rtop.location.replace("top_menu.htm");
+		}
+
+	// End hiding. -->
+	</script>
+	<noscript>
+		<hr size="4" /><p> 
+		This page is intended to fill the main frame in our frames website <a href="http://www.orm.net">www.orm.net</a>.<br />
+		However, this website is designed for Web browsers that have Javascript enabled.<br />
+		Your browser does not have Javascript enabled: either it does not understand Javascript or it is set to disable such scripts.<br /><br />
+		We encourage you to enable your browser to handle Javascript, for proper viewing of this site.<br /><br />
+		</p><hr size="4" />
+	</noscript>
+
+</head>
+<!-- body bgcolor="#ffffdd" onload="self.focus();" -->
+<body bgcolor="#ffffff" onload="self.focus();"><a name="intro"></a>
+<table border="0" cellpadding="0" cellspacing="5" width="100%">
+	<tbody>
+		<tr>
+			<td width="10">&nbsp;</td>
+			<td><!-- BR / -->
+			<p><font face="Verdana"><img align="right" alt="Home Picture" border="0" height="200" hspace="5" src="images/home_pic.png" vspace="5" width="370" /><b>Object Role Modeling (ORM)</b> is a powerful method for designing and querying database models at the conceptual level, where the application is described in terms easily understood by non-technical users. In practice, ORM data models often capture more business rules, and are easier to validate and evolve than data models in other approaches. </font></p>
+
+			<p><font face="Verdana">This site features a number of technical papers and articles on ORM, as well as other approaches such as the Unified Modeling Language (UML). Permission has been obtained from the relevant publishers to reproduce these publications on this website, and to make them freely downloadable. If you are unfamiliar with ORM, you may want to first review the <a href="overview.html">ORM in Detail</a> section of this site. Details about upcoming courses and conferences, as well as links to websites with additional ORM publications may be found in the <a href="resources.html">Resources</a> section. </font></p>
+
+			<p><font face="Verdana"><b>The editor</b> </font></p>
+
+			<p><font face="Verdana"><a href="halpin.html" target="_blank">Dr Terry Halpin</a> is the leading authority on Object-Role Modeling (ORM). His academic career included senior lecturer and professor positions in Australia, and professorships in computer science at universities in the USA and Malaysia. His industry experience includes many years in data modeling technology at various companies including Microsoft Corporation. He later worked as a research scientist at LogicBlox, and as a data modeling consultant for the European Space Agency. His research focuses on conceptual modeling and conceptual query technology. Dr Halpin formalized the Object Role Modeling approach and has authored ten books and over 200 technical papers. Visit the rest of this site to explore various conceptual data modeling topics discussed in his publications. </font></p>
+
+			<p>&nbsp;</p>
+
+			<table border="0" cellpadding="0" cellspacing="5" width="100%">
+				<tbody>
+					<tr valign="top">
+						<td align="center" width="170"><font face="Verdana"><img alt="Dr. Terry Halpin" border="0" height="127" src="images/TERRY2006_cropped2.jpg" width="170" /></font></td>
+						<td width="10"><font face="Verdana"><img border="0" height="1" src="images/clear.gif" width="10" /></font></td>
+						<td align="left" colspan="2" width="100%"><font face="Verdana"><font face="Verdana, Helvetica, sans-serif">Thanks for dropping in to the Object Role Modeling Website. In addition to the technical papers on Object Role Modeling and other modeling approaches, you can find details about my book, <i>Information Modeling and Relational Databases</i>, information about other resources, and interviews with the press. </font></font>
+						<p><font face="Verdana"><font face="Verdana, Helvetica, sans-serif">Information on this site will grow with time, so please revisit. If you have any feedback or suggestions, please e-mail me at <a href="mailto:t.halpin@live.com">t.halpin@live.com</a>.</font></font></p>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">&nbsp;
+						<p><font face="Verdana">Happy reading! </font></p>
+
+						<p><font face="Verdana">Terry</font><br />
+						<img border="0" height="5" src="images/clear.gif" width="1" /></p>
+						</td>
+						<td align="right" valign="top" width="900"><img border="0" height="20" src="images/clear.gif" width="1" /><br />
+						<a href="http://www.adobe.com/prodindex/acrobat/readstep.html" target="_blank"><img border="0" height="31" src="images/getacro.gif" width="88" /></a></td>
+						<td align="left" valign="top"><img border="0" height="20" src="images/clear.gif" width="1" /><br />
+						<font size="-1"><font face="Verdana, Helvetica, sans-serif">To view a PDF file you need to install an additional piece of software called <a href="http://www.adobe.com/prodindex/acrobat/readstep.html" target="_blank">Adobe Acrobat Reader</a> from the Adobe site.</font></font></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<hr />
+			<p><font face="Verdana"><i>Last updated: 2024 July 12</i>&nbsp; </font></p>
+			&nbsp; 
+                
+
+			<p><font face="Verdana"><a name="new"><b>What&#39;s new?</b></a> </font></p>
+      
+      <p><font face="Verdana"><font face="Verdana"><a name="updates"><b>Recent Updates log</b></a>:<br />  
+      
+      <p><font face="Verdana"><font face="Verdana">Added links to the video of my EROSS-2020 presentation "Reference Scheme Modelling" and the following Q&A session (see Resources page). </font></p>  
+      
+      <p><font face="Verdana"><font face="Verdana">Added details on <i>3rd edition of Information Modeling and Relational Databases </i> (this page and Resources page). </font></p>
+       			
+      <p><font face="Verdana"><font face="Verdana">Updated Errata for <i>Object Role Modeling Fundamentals(this page). </font></p>
+      
+      <p><font face="Verdana"><font face="Verdana">Updated ORM2 Graphical Notation glossary: Added further constraints (see Resources page). </font></p>
+      
+       <p><font face="Verdana"><font face="Verdana">Added paper "Objectication and Atomicity" (see Modeling Issues page). </font></font></p>
+      
+       <p><font face="Verdana"><font face="Verdana">Updated NORMA_Lab1_new to cater for updates to NORMA and support for Visual Studio 2022 (see Resources page). For old versions of NORMA that work with Visual Studio 2015 or earlier, use the old Norma_Lab1. </font></font></p>
+			
+			<p><font face="Verdana">Added my EROSS-2020 presentation "Reference Scheme Modelling" (see Resources page)</i>. </font></p>
+			
+			<p><font face="Verdana">Added Dr Tony Morgan as an ORM consultant (see Resources page)</i>. </font></p>
+			
+			<p><font face="Verdana">Updated book errata for <i>Information Modeling and Relational Databases, 2nd edition (this page)</i>. </font></p>
+			
+			<p><font face="Verdana"><font face="Verdana">Updated ORM2 Graphical Notation glossary: added examples of inclusive-or and exclusive-or constraints over adjacent roles hosted by the same object type (see Resources page). </font></font></p>
+			
+			<p><font face="Verdana">Updated book errata for <i>Information Modeling and Relational Databases, 2nd edition (this page)</i>. </font></p>
+			
+			<p><font face="Verdana"><font face="Verdana">Updated ORM2 Graphical Notation glossary: minor updates to Ternary Fact Type and Inclusive-Or Constraint sections (see Resources page). </font></font></p>
+
+			<p><font face="Verdana"><font face="Verdana">Addded 2 documents on ORM formal syntax and semantics, and links to discussion group, and added an ORM researcher (see Resources page). </font></font></p>
+					
+			<p><font face="Verdana">Added link to my fourteenth article in a series on logical data modeling for the <i>Business Rules Journal</i> (see Resources page). </font></p>
+			
+			<p><font face="Verdana">Updated book errata for <i>Information Modeling and Relational Databases, 2nd edition (this page)</i>. </font></p>
+			
+			<p><font face="Verdana"><font face="Verdana">Updated NORMA Lab1 (see Resources page). </font></font></p>
+
+			<p><font face="Verdana"><font face="Verdana">The <b>Data Modeling Zone Europe 2016 conference</b> held in Berlin, Germany, October 10-11, 2016 included four hours of presentations on fact-oriented modeling by myself, four hours of presentations on fact based modeling by Clifford Heath, as well as two one hour presentations relevant to fact based modeling (one on CaseTalk by Marco Wobben, and one on data modeling for polyglot persistence by Phill Radley). For further details about future DMZ conferences, see the <a href="http://www.datamodelingzone.eu/">Data Modeling Zone Europe website</a>. </font></font></p>
+
+
+			<p><font face="Verdana"><font face="Verdana">Added a news about, and a link to my book &quot;Object-Role Modeling Workbook&quot;. </font></font></p>
+
+			<p><font face="Verdana">&nbsp;</font></p>
+
+			<table>
+				<tbody>
+					<tr>
+						<td><font face="Verdana"><font face="Verdana"><img alt="Object-Role Modeling Workbook, Cover" border="0" height="250" src="images/ORM_Workbook.jpg" width="200" /></font></font></td>
+						<td><font face="Verdana"><font face="Verdana">My latest book on ORM has been published by Technics Publications. Titled <i>Object-Role Modeling Workbook</i>, and aimed mainly at data modleing practitioners, this is a sequel to my previous book &quot;Object-Role Modeling Fundamentals&quot;. This book briefly reviews the fundamentals of ORM, and then discusses additional topics such as model reports generation, vocabulary glossaries, relational mapping options, annotated relational schemas, schema optimization, and data modeling patterns. Written in easy-to-understand language, it illustrates each topic with simple examples, and explains how to use the freeware NORMA tool to implement the ideas discussed. The book also includes many practical exercises to promote expertise in the techniques covered, with answers provided to all the exercise questions. The book is available in both print and electronic form from various channels, as well as directly from the <a href="https://technicspub.com/object-role-modeling-workbook/">Technics Publications website</a>. Anyone who orders the print version of the book from that website can receive a 25% discount by using the coupon code ORMFundamentals. </font></font></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p><font face="Verdana">&nbsp;</font></p>
+
+			<table>
+				<tbody>
+					<tr>
+						<td><font face="Verdana"><font face="Verdana"><img alt="Object-Role Modeling Fundamentals, Cover" border="0" height="250" src="images/ORMFundamentals.jpg" width="200" /></font></font></td>
+						<td><font face="Verdana"><font face="Verdana">My previous ORM book published by Technics Publications, titled <i>Object-Role Modeling Fundamentals</i>, is aimed mainly at data modeling practitioners, and provides an up-to-date coverage of the latest enhancements to ORM and its conceptual schema design procedure. The book also includes lab exercises for using the NORMA tool to create ORM schemas and map them to relational database schemas. The book is available in both print and electronic form from various channels, as well as directly from the <a href="https://technicspub.com/object-role-modeling-fundamentals/">Technics Publications website</a>. Anyone who orders the print version of the book from that website can receive a 25% discount by using the coupon code ORMFundamentals. </font></font>
+						<p><font face="Verdana"><font face="Verdana">The first printing of the book included some errors, as detailed in the <a href="ErrataFundamentals.htm" target="_blank">Book Errata.</a></font></font></p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p><font face="Verdana"><font face="Verdana">The <b>Data Modeling Zone Australia conference</b> held in Sydney, Australia, May 13-14, 2015, included two presentations on fact-oriented modeling, one by Clifford Heath and one by myself. A link to my presentation is included on the Resources page. For further details about future DMZ conferences, see the <a href="http://www.datamodelingzone.com/">Data Modeling Zone website</a>. </font></font></p>
+
+			<p><font face="Verdana"><font face="Verdana">Microsoft has released <a href="http://www.visualstudio.com/products/visual-studio-community-vs">Community Editions of Visual Studio 2017, 2019 and 2022</a> (see http://www.visualstudio.com/products/visual-studio-community-vs) that are free to the public. Free Community Editions of Visual Studio 2103 and 2015 are available at https://visualstudio.microsoft.com/vs/older-downloads/. The NORMA tool is a free plug-in to Visual Studio.</font></font></p>
+
+			<p><font face="Verdana"><font face="Verdana">The <b>ORM2014 Workshop</b> was held in 2014 in the beautiful town of Bolzano, Italy, with active participation by academic and industrial experts from several countries. The workshop was hosted by the Knowledge Representation and Database group at the Free University of Bozen/Bolzano. </font></font></p>
+
+			<p><font face="Verdana"><font face="Verdana">The <b>Data Modeling Zone world conference</b> held in Portland, Oregon, October 20-22, 2014, included three presentations on fact-oriented modeling. Two of these were 3 hour workshops, one by Dr Gordon Everest and one by myself, and the other was a one hour presentation by myself. For details of future Data Modeling Zone conferencesm see the <a href="http://www.datamodelingzone.com/">Data Modeling Zone website</a>. </font></font></p>
+
+			<p><font face="Verdana"><font face="Verdana">Links to my series on of artciles on ontology modeling for the <i>Business Rules Journal</i> are now on the Resources page. </font></font></p>
+
+			<p><font face="Verdana"><font face="Verdana">The 9th International Workshop on Fact-Oriented Modeling (<b>ORM2013</b>) was held September 11-13, 2013 in Graz, Austria in conjunction with the On The Move Conferences. Slides for the presentations are available from the <a href="http://www.ormfoundation.org/files/folders/orm_2013/default.aspx">ORM Foundation Library</a>. Slides for presentations from some previous ORM workshops are also available from the ORM Foundation Library. </font></font></p>
+
+			<p><font face="Verdana"><font face="Verdana">Dr Halpin gave a keynote presentation titled &#39;Fact-Orientation and Conceptual Logic&#39; at the EDOC2011 Conference in Helsinki on September 1, 2011. A video of the presentation is accessible from a link on the Resouces page. </font></font></p>
+
+			<p><font face="Verdana"><font face="Verdana">An updated, 6-page summary of the ORM 2 Graphical notation, including examples, is available for download on the Resources page.</font></font></p>
+
+			<p><font face="Verdana"><font face="Verdana">The Exploring Modeling Methods in Systems Analysis and Design (EMMSAD) series of annual conferences provide a forum to discuss the latest advances in information systems modeling. Details about the EMMSAD conference as well as resources from past EMMSAD presentations may be found <a href="http://www.emmsad.org/">here</a>. </font></font></p>
+
+			<p><font face="Verdana"><font face="Verdana">The Resources page now includes a link to the ActiveFacts toolkit. </font></font></p>
+
+			<p><font face="Verdana"><font face="Verdana">The Resources page now includes a link to Andy Carver&#39;s Website, and a link to a Visio stencil for drawing ORM 2 diagrams that has been significantly upgraded by Andy. </font></font></p>
+
+			<p><font face="Verdana">&nbsp;</font></p>
+
+			<table>
+				<tbody>
+					<tr>
+						<td><font face="Verdana"><font face="Verdana"><img alt="Information Modeling and Relational Databases, 2nd Edition, Cover" border="0" height="250" src="images/Book2ndEdnCover.jpg" width="250" /></font></font></td>
+						<td><font face="Verdana"><font face="Verdana">The <b>2nd edition</b> of <i><b>Information Modeling and Relational Databases</b></i> (ISBN: 978-0-12-373568-3) was published on March 1, 2008. This major upgrade of the earlier edition runs to 970 pages and includes loads of new and updated content. Fully updated to ORM 2 and UML 2 and the latest developments in SQL and XML, this book reveals the true power of semantic data modeling (covering ORM, ER, and UML), as well as addressing business process modeling, relational databases, and other modeling topics such as the semantic web. Here is a <a href="http://www.amazon.com/Information-Modeling-Relational-Databases-Second/dp/0123735688/ref=sr_1_5?ie=UTF8&amp;s=books&amp;qid=1202166747&amp;sr=1-5">link to the book on Amazon</a>. </font></font>
+						<p><font face="Verdana"><font face="Verdana">The first printing of the book included a number of errors, as detailed in the <a href="Errata2.htm" target="_blank">Book Errata.</a></font></font></p>
+						</td>
+					</tr>
+				</tbody>
+			</table>      
+  
+  <p><font face="Verdana">&nbsp;</font></p>    
+ <table>
+				<tbody>
+					<tr>
+						<td><font face="Verdana"><font face="Verdana"><img alt="Information Modeling and Relational Databases, 3rd Edition, Cover" border="0" height="250" src="images/Book3rdEdnCover.jpg" width="250" /></font></font></td>
+						<td><font face="Verdana"><font face="Verdana">The <b>3rd edition</b> of <i><b>Information Modeling and Relational Databases</b></i> (ISBN: 9780443237904) will be published by the end of July, 2024. For readers familiar with the second edition of this book, the major differences are now summarized. The coverage of ORM, ER, UML, SQL, OWL, and BPMN has been thoroughly updated to cover their latest versions. A significant amount of new material has been added. Various data file formats such as CSV, XML, JSON, YAML, and some other markup languages are now covered, and a more thorough treatment is provided for non-relational databases, especially NoSQL. All previous chapters have been substantially revised, with several topics covered in greater depth. The new content has led to a larger book. </font></font>
+						<p><font face="Verdana"><font face="Verdana">Any errors in the first printing of the book will be detailed in the <a href="Errata3.html" target="_blank">Book Errata.</a></font></font></p>
+						</td>
+					</tr>
+				</tbody>
+			</table>     
+      
+      
+
+			<p><font face="Verdana"><font face="Verdana"><b>NORMA</b> (Natural ORM Architect) is an modeling tool under development that supports the next generation of ORM (ORM 2). Implemented as an open-source plug-in to Microsoft&#39;s Visual Studio .NET, NORMA requires either the free Community Edition of Visual Studio (2017, 2019 or 2022) or at least the standard version of Visual Studio (2005, 2008, 2010, 2012, 2013, 2015, 2017, 2019 or 2022). For further details on the ORM 2 graphical notation, see <a href="pdf/ORM2_TechReport1.pdf" target="_blank">ORM 2 Technical Report 1</a>. A technical preview of NORMA is available on <a href="http://www.ormfoundation.org/Default.aspx">The ORM Foundation</a> as well as SourceForge. Here is an <a href="http://www.ormfoundation.org/files/">ORM Foundation link to NORMA</a>, and here is a <a href="http://sourceforge.net/projects/orm" target="_top">SourceForge link to NORMA</a>.<br />
+			Currently the NORMA software tool supports entry of ORM2 schemas, verbalization of of most constraints, and code generation (for basic constraints) to a variety of DBMSs (including SQL Server, DB2, Oracle, PostgreSQL, and MySQL) as well as class models and XML schema. NORMA is capable of importing ORM schemas entered in Visio for Enterpise Architects, but the diagrams need to be laid out manually. For Part 1 of the specification for automated verbalization in NORMA, see <a href="pdf/ORM2_TechReport2.pdf" target="_blank">ORM 2 Technical Report 2</a>. </font></font></p>
+
+			<p><font face="Verdana"><font face="Verdana"><a name="updates"><b>Recent Updates log</b></a>:<br />
+			<font size="-1"> 
+      2024 July 12: Added links to the video of my EROSS-2020 presentation "Reference Scheme Modelling" and the following Q&A session (see Resources page).<br /> 
+      2024 July 11: Updated Errata for <i>Object Role Modeling Fundamentals(this page).</i><br />
+      2024 July 10: Added details on <i>Information Modeling and Relational Databases, 3rd edition</i> (this page).<br />
+      2023 Oct 10: Added paper "Objectication and Atomicity" (see Modeling Issues page).<br />
+      2023 Jan 8: Updated NORMA_Lab1_new to remove former slide 2 (see Resources page)and this home page.<br />
+      2022 Nov 10: Updated NORMA_Lab1_new (see Resources page) and this home page.<br />
+			2021 Oct 26: Added my EROSS-2020 presentation "Reference Scheme Modelling" (see Resources page).<br />
+			2020 Oct 1: Added Dr Tony Morgan as an ORM consultant (see Resources page).<br />
+			2020 April 7: Updated book errata for Information Modeling and Relational Databases, 2nd edition (this page), and updated ORM2 Graphical Notation glossary (inclusive-or and exclusive-or constraint sections -- Resources page).<br />
+			2020 April 4: Updated book errata for Information Modeling and Relational Databases, 2nd edition (this page).<br />
+			2020 March 28: Updated ORM2 Graphical Notation glossary: minor updates to Ternary Fact Type and Inclusive-Or Constraint sections (see Resources page).<br />
+			2020 March 20: Addded 2 documents on ORM formal syntax and semantics, and links to discussion group, and added an ORM researcher (see Resources page).<br />
+			2019 May 24: Added link to NORMA_Lab1_new explaining how to install and use the new versions of NORMA that work with Visual Studio 2017 and 2019 (Resources page), and added a link to my 14th Logical Modeling article (Resources page).<br/>
+			2019 Jan 27: Updated book errata for Information Modeling and Relational Databases, 2nd edition.<br />
+			2018 Nov 14: Updated book errata for Information Modeling and Relational Databases, 2nd edition.<br />
+			2018 Nov 2: Updated details about free Community Editions of Visual Studio.<br />
+			2018 oct 17: Added links to 12th and 13th Logical Data Modeling articles (Resources page), and updated book errata for Information Modeling and Relational Datbases, 2nd edition (this page).<br />
+			2018 April 24: Added link to my eleventh Logical Modeling Article (Resources page).<br />
+			2018 Jan 25: Added links to my tenth Logical Modeling article (Resources page).<br />
+			2017 July 24: Added links to my seventh and eighth Logical Modeling articles (Resources page).<br />
+			2016 October 19: Updated book errata for Information Modeling and Relational Databases, 2nd edition. <br />
+			2016 Aug 31: Updated NORMA Lab 1 (see Resources page).<br />
+			2016 August 24: Added news of Data Modeling Zone Europe conference, and link to my seventh article on Logical Modeling (Resources page).<br />
+			2016 March 27: Added a link to my sixth Logical Modeling article (Resources page).<br />
+			2016 Jan 4: Added book errata for ORM Fundamentals book (this page).<br />
+			2015 December 27: Added news about, and a link to, ORM Workbook.<br />
+			2015 October 6: Added links to my latest Logical Modeling articles and my DMZ Australia 2015 presentation (see Resources page).<br />
+			2015 August 5: Added links to NORMA Labs (Resources page).<br />
+			2015 April 18: Added news about, and link to, ORM Fundamentals book.<br />
+			2015 April 2: Added third Logical Modeling article (Resources page).<br />
+			2015 April 2: Updated book errata.<br />
+			2014 Dec 31: Updated book errata.<br />
+			2014 Nov 24: Added note regarding free Visual Studio 2013 Community edition, and added second article on logical data modeling.<br />
+			2014 Sep 12: Added note regarding Data Modeling Zone Australia 2015 conference (this page and Resources page).<br />
+			2014 July 31: Added note regarding ORM2014 workshop to be held in Bolzano (this page and Resources page).<br />
+			2014 June 17: Added note regarding removal of ORM2014 Workshop from OTM2014 (this page and Resources page).<br />
+			2014 June 4: Updated Call for Papers for the ORM2014 Workshop (this page and Resources page).<br />
+			2014 May 24: Added first Logical Modeling article (Resources page).<br />
+			2014 May 1: Updated book errata.<br />
+			2014 March 26: Added first Call For Papers for the ORM 2014 Workshop.<br />
+			2014 Feb 24: Added details about Data Modeling Zone 2014.<br />
+			2013 Dec 19: Added 15th Ontology Modeling article (Resources page). Updated book errata.<br />
+			2013 Sep 30: Added link to ORM2013 Workshop slide presentations. Added 14th Ontology Modeling article (Resources page). Updated book errata.<br />
+			2013 May 28: Updated submission deadlines in Final Call for Papers for ORM2013 Workshop (this page and Resources page).<br />
+			2013 May 20: Updated Final Call for Papers for ORM2013 Workshop (this page and Resources page). Added 13th ontology modeling article (Resources page). Updated book errata.<br />
+			2013 March 6: Added 12th ontology modeling article (Resources page) and first Call For Papers for the ORM2013 Workshop (this page and Resources page).<br />
+			2012 Oct 25: Added 11th ontology modeling article, and updated CaseTalk details (Resources page). Added link to the ORM2012 slide presentations (this page and Resources page). Updated book errata.<br />
+			2012 May 23: Updated Call For Papers (extended deadlines) for the ORM2012 Workshop. Added 10th ontology modeling article (Resources page). Updated book errata.<br />
+			2012 March 1: Added first Call For Papers for the ORM2012 Workshop.<br />
+			2011 Dec 27: Added link to EDOC2011 video (Resources page). Added 8th and 9th ontology modeling articles (Resources page). Updated ORM 2 graphical summary (Resources page). Added details on EMMSAD2012 Conference and ORM2011 Workshop. Updated book errata.<br />
+			2011 Oct 1: Added program for ORM2011 Workshop. Added 7th ontology modeling article (Resources page). Updated book errata.<br />
+			2011 Mar 17: Added CFP for ORM2011. Added 5th and 6th ontology modeling articles (Resources page). Updated book errata.<br />
+			2010 Nov 25: Added CFP for EMMSAD2011, link to ORM2010 slides, and 4th ontology modeling article (Resources page). Updated book errata.<br />
+			2010 July 9: Added a link to the ActiveFacts toolkit (Resouces page).<br />
+			2010 June 18: Updated INTI International University details to reflect its upgrading to full university status.<br />
+			2010 June 11: Updated ORM2010 Workshop CFP with extended deadlines etc.<br />
+			2010 Mar 16: Added ORM 2 Graphical notation summary (Resources page).<br />
+			2010 Mar 15: Added details of ORM2010 Workshop, and updated details of EMMSAD2010 Conference. Added 3rd ontology modeling article (resources page). Updated errata for information modeling book.<br />
+			2010 Jan 2: Added details of EMMSAD2010 and link to ORM2009 slides (this page). Added 2nd ontology modeling article, link to Andy Carver, link to upgraded ORM 2 Visio stencil (resources page). Updated Halpin employment details. Updated errata for information modeling book.<br />
+			</font></font></font></p>
+
+			<p><font face="Verdana"><font face="Verdana"><font size="-1"><a href="http://purehost.com/green/green-certified.bml?domain=orm.net" onclick="MyWindow=window.open('http://purehost.com/green/green-certified.bml?domain=orm.net','greenCertified','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=550,height=700,left=50,top=50'); return false;"><img border="0" src="http://images.purehost.com/green/badge-1.png" /></a> </font></font></font></p>
+
+			<p><font face="Verdana">&nbsp;</font></p>
+
+			<center>
+			<hr noshade="noshade" size="1" /><font face="Verdana"><font face="Verdana"><a href="homepage.html"><font face="Arial, Helvetica, sans-serif"><b>ORM Home</b></font></a><font face="Arial, Helvetica, sans-serif"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="overview.html">ORM in Detail</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="issues.html">Modeling Issues</a><br />
+			<a href="queries.html">Conceptual Queries</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="uml_orm.html">UML and ORM</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="resources.html">Resources</a></b></font> </font></font>
+
+			<hr noshade="noshade" size="1" /> <font face="Verdana"><font face="Verdana"><font size="-1"><i><font face="Arial, Helvetica, sans-serif">All diagrams on this site were created with Microsoft Visio.</font></i></font> </font></font></center>
+			</td>
+			<td width="10">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>
