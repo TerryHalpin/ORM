@@ -1,0 +1,375 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<TITLE>Modeling Issues</TITLE>
+	<META http-equiv="Content-Style-Type" content="text/css">
+	<SCRIPT language="JavaScript" type="text/javascript">
+	<!--  This HTML-style commenting-out hides the script from older, Javascript-incapable browsers
+
+		if (parent == self){  //The file is being shown in a top-level window instead of in a frame
+			var msg = "<p><HR size=4>You're looking at this page in a top-level window, rather than in a frame.<br />" + 
+				'However, this page was designed to show within a frame in the website it came from. <br /><br />' + 
+				'If you want to see the frames version of the website this page came from, <br />' + 
+				'and you have Javascript enabled in your browser or are willing to enable it for this site,<br />' + 
+				'please go to <a href="http://www.orm.net">www.orm.net<\/a>.<br /><br /><HR size=4><\/p>';
+			document.write(msg);
+		} 
+		else
+		{	parent.left.location.replace("left_menu2.htm");
+			parent.rtop.location.replace("top_menu2.htm");
+		}
+
+	// End hiding. -->
+	</SCRIPT>
+
+	<NOSCRIPT>
+		<HR size="4"> <p>
+		This page is intended to fill the main frame in our frames website <a href="http://www.orm.net">www.orm.net</a>.<br />
+		However, this website is designed for Web browsers that have Javascript enabled.<br />
+		Your browser does not have Javascript enabled: either it does not understand Javascript or it is set to disable such scripts.<br /><br />
+		We encourage you to enable your browser to handle Javascript, for proper viewing of this site.<br /><br />
+		</p><HR size="4">
+	</NOSCRIPT>
+
+</head>
+<!-- body bgcolor="#ffffdd" onload="self.focus();" -->
+<body bgcolor="#ffffff" onload="self.focus();">
+	<A name="intro"></A>
+	
+	<TABLE cellSpacing=5 cellPadding=0 width="100%" border=0>
+	 <TR>
+	  <TD width=10>
+	  </TD>
+	  <TD>
+	  
+	<P><IMG height=5 src="images/clear.gif" width=1 
+      border=0><BR /><FONT face=Verdana>These articles address various issues in data 
+      modeling. To view a PDF file you may need to install an additional piece of software called <A 
+            href="http://www.adobe.com/prodindex/acrobat/readstep.html" target="_blank">Adobe 
+            Acrobat Reader</A> from the Adobe site.
+  
+
+<P><A name="Normalization"><B><FONT SIZE="+1">Atomicity and Normalization</FONT></B></A>
+<A HREF="pdf/Normalization.pdf" target="_blank">pdf file</A> (127K)
+<br>Carver, A. & Halpin, T. 2008, ‘Atomicity and Normalization’, <i>Proc. EMMSAD’08: 13th Int. Workshop on Exploring Modeling Methods for Systems Analysis and Design</i>, eds. T. Halpin, E. Proper & J. Krogstie, pp. 40-54.
+
+<P>A common aim of data modeling approaches is to produce schemas whose instantiations are always redundancy-free. This is especially useful when the implementation target is a relational database. This paper contrasts two very different approaches to attain a redundancy-free relational schema. The Object-Role Modeling (ORM) approach emphasizes capturing semantics first in terms of atomic (elementary or existential) fact types, followed by synthesis of fact types into relation schemes. Normalization by decomposition instead focuses on “nonloss decomposition” to various, and progressively more refined, “normal forms”. Nonloss decomposition of a relation requires decomposition into smaller relations that, upon natural join, yield the exact original population. Nonloss decomposition of a table scheme (or relation variable) requires that the decom-position of all possible populations of the relation scheme is reversible in this way. In this paper we show that the dependency requirement for “all possible populations” is too restrictive for definitions of multivalued and join dependen-cies over relation schemes. By exploiting modeling heuristics underlying ORM, we offer better definitions of these data dependencies, and of “nonloss decom-position”, thus enabling these concepts to be addressed at a truly semantic level.
+	
+    <hr>
+
+
+  <P><A name="modal"><B><FONT SIZE="+1">Business Rule Modality</FONT></B></A>
+<A HREF="pdf/RuleModality.pdf" target="_blank">pdf file</A> (226K)
+<br>Halpin, T. 2006, ‘Business Rule Modality’, <i>Proc. CAiSE’06 Workshops</i>, eds T. Latour & M. Petit, Namur University Press, pp. 383-94.
+
+<P>A business domain is typically constrained by business rules. In practice, these rules often 
+	include constraints of different modalities (e.g. alethic and deontic). Alethic rules impose 
+	necessities, which cannot, even in principle, be violated by the business. Deontic rules impose 
+	obligations, which may be violated, even though they ought not. Conceptual modeling approaches 
+	typically confine their specification of rules to alethic rules. This paper discusses one way to 
+	model deontic rules, especially those of a static nature. A formalization based on modal operators 
+	is provided, and some challenging semantic issues are examined from both logical and pragmatic 
+	perspectives. Because of its richer semantics, the main graphic notation used is that of Object-
+	Role Modeling (ORM). However, the main ideas could be adapted for UML and ER as well. A basic 
+	implementation of the proposed approach has been prototyped in a tool that supports automated 
+	verbalization of both alethic and deontic rules. 
+	
+    <hr>
+
+
+	<P><A name="objn"><B><FONT size=+1>Objectification</FONT></B></A> 
+<A href="pdf/objectification.pdf" target="_blank">pdf file</A> (159K)
+<br>Halpin, T. 2005. ‘Objectification’, <i>Proc. CAiSE’05 Workshops</i>, vol. 1, eds J. Castro & E. Teniente, FEUP, pp. 519-32.
+
+      <P>Some information modeling approaches allow instances of relationships 
+      or associations to be treated as entities in their own right. In the 
+      Unified Modeling Language (UML), this modeling technique is called 
+      “reification”, and is mediated by means of association classes. In 
+      Object-Role Modeling (ORM), this process is called “objectification” or 
+      “nesting”. While this modeling option is rarely supported by industrial 
+      versions of Entity-Relationship Modeling (ER), it is allowed in several 
+      academic versions of ER. Objectification is related to the linguistic 
+      activity of nominalization, of which two flavors may be distinguished: 
+      circumstantial; and propositional. In practice, objectification needs to 
+      be used judiciously, as its misuse can lead to implementation anomalies, 
+      and those modeling approaches that permit objectification often provide 
+      incomplete or flawed support for it. This paper provides an in-depth 
+      analysis of objectification, shedding new light on its fundamental nature, 
+      and providing practical guidelines on using objectification to model 
+      information systems. Because of its richer semantics, the main graphic 
+      notation used is that of ORM 2 (the latest generation of ORM). However, 
+      the main ideas are relevant to UML and ER as well. 
+       
+      <HR>
+
+      <P><A name="higher"><B><FONT size=+1>Information Modeling and Higher-Order Types</FONT></B></A> 
+<A href="pdf/EMMSAD2004.pdf" target="_blank">pdf file</A> (538K)       
+<br>Halpin, T. 2004, ‘Information Modeling and Higher-Order Types’, <i>Proc. CAiSE’04 Workshops</i>, vol. 1, (eds Grundspenkis, J. & Kirkova, M.), Riga Tech. University, pp. 233-48.
+
+     <P>While some information modeling approaches (e.g. the Relational Model, 
+      and Object-Role Modeling) are typically formalized using first-order 
+      logic, other approaches to information modeling include support for 
+      higher-order types. There appear to be three main reasons for requiring 
+      higher-order types: (1) to permit instances of categorization types to be 
+      types themselves (e.g. the Unified Modeling Language introduced power 
+      types for this purpose); (2) to directly support quantification over sets 
+      and general concepts; (3) to specify business rules that cross 
+      levels/metalevels (or ignore level distinctions) in the same model. As the 
+      move to higher-order logic may add considerable complexity to the task of 
+      formalizing and implementing a modeling approach, it is worth 
+      investigating whether the same practical modeling objectives can be met 
+      while staying within a first-order framework. This paper examines some key 
+      issues involved, suggests techniques for retaining a first-order 
+      formalization, and also makes some suggestions for adopting a higher-order 
+      semantics 
+      
+      <HR>
+
+      <P><A name="nested"><B><FONT size=+1>Uniqueness Constraints on Objectifed 
+      Associations</FONT></B></A> 
+<A href="pdf/JCM2003Oct.pdf" target="_blank">pdf file</A> (341K) 
+<br>Halpin, T.A. & Hallock, P. 2003, ‘Uniqueness Constraints on Objectified Associations’, <i>Journal of Conceptual Modeling</i>, October 2003, online at www.inconcept.com.
+
+      <P>Unlike UML and some ER versions, ORM currently allows a fact type to be 
+      objectified only if it either has a spanning uniqueness constraint or is a 
+      1:1 binary fact type. This article argues that this restriction should be 
+      relaxed, and replaced by a modeling guideline that allows some n-ary 
+      associations to be objectified even if their longest uniqueness constraint 
+      spans n-1 roles. The pros and cons of removing this restriction are 
+      discussed, and illustrated with examples. 
+      
+      <HR>
+
+      <P><A name="join"><B><FONT size=+1>Join Constraints</FONT></B></A> 
+<A href="pdf/JoinConstraints.pdf" target="_blank">pdf file</A> (364K) 
+<br>Halpin, T.A. 2002, ‘Join Constraints’, <i>Proc. Seventh CAiSE/IFIP-WG8.1 International Workshop on Evaluation of Modeling Methods in Systems Analysis and Design</i>, eds. T. Halpin, J. Krogstie, K. Siau, Toronto, Canada, pp. 121-131. 
+
+      <P>Many application domains involve constraints that, at a conceptual 
+      modeling level, apply to one or more schema paths, each of which involves 
+      one or more conceptual joins (where the same conceptual object plays roles 
+      in two relationships). Popular information modeling approaches typically 
+      provide only weak support for such join constraints. This paper contrasts 
+      how join constraints are catered for in Object-Role Modeling (ORM), the 
+      Unified Modeling Language (UML), the Object-oriented Systems Model (OSM), 
+      and some popular versions of Entity-Relationship modeling (ER). Three main 
+      problems for rich support for join constraints are identified: 
+      disambiguation of schema paths; disambiguation of join types; and mapping 
+      of join constraints. To address these problems, some notational, 
+      metamodel, and mapping extensions are proposed. 
+      
+      <HR>
+
+      <P><A name="elem"><B><FONT size=+1>What is an elementary fact?</FONT></B></A> 
+<A href="pdf/ElemFact.pdf" target="_blank">pdf file</A> (73K) 
+<br>Halpin, T.A. 1993, ‘What is an elementary fact?’, <i>Proc. First NIAM-ISDM Conf.</i>, eds G.M. Nijssen & J. Sharp, Utrecht, (Sep), 11 pp. 
+
+      <P><IMG height=114 alt="ElemFact Picture" hspace=5 
+      src="images/elmfact_pic.png" width=223 align=right vspace=5 
+      border=0>Database schemas are best designed by mapping from a high level, 
+      conceptual schema expressed in human-oriented concepts. While conceptual 
+      schemas are often specified using entity relationship modeling (ER), a 
+      more natural and expressive formulation is often possible using Object 
+      Role Modeling (ORM). This approach views the world in terms of objects 
+      playing roles, and traditionally expresses all information in terms of 
+      elementary facts, constraints and derivation rules. Although verbalization 
+      in terms of elementary facts has many practical and theoretical 
+      advantages, it is difficult to define the notion precisely. This paper 
+      examines various awkward but practical cases which challenge the 
+      traditional definition. In so doing, it aims to clarify what elementary 
+      facts are and how they can be best expressed. 
+      
+      <HR>
+
+      <P><A name="subtypes"><B><FONT size=+1>Subtyping: conceptual and logical issues</FONT></B></A> 
+<A href="pdf/Subtype.pdf" target="_blank">pdf file</A> (132K)  
+<br>Halpin. T.A. 1995, ‘Subtyping: conceptual and logical issues’, <i>Database Newsletter</i>, ed. R.G. Ross, Database Research Group Inc., vol. 23, no. 6, pp. 3-9.
+
+<BR>(Note: This newsletter has been replaced by the <i>Business Rules Journal</i> published by <A 
+      href="http://www.brsolutions.com/" target="_top">Business Rules Solutions, Inc.</A>) 
+      <P><IMG height=143 alt="Subtype Picture" hspace=5 
+      src="images/subtype_pic.png" width=155 align=right vspace=5 
+      border=0>Subtyping is an important feature of semantic approaches to 
+      conceptual schema design and, more recently, object-oriented database 
+      design. However the relational model does not directly support subtyping, 
+      and CASE tools for mapping conceptual to relational schemas typically 
+      provide only very weak support for mapping subtypes. This paper surveys 
+      some of the main issues related to conceptual specification and relational 
+      mapping of subtypes, and indicates how Object Role Modeling solves the 
+      associated problems. 
+      
+      <HR>
+
+      <P><B><FONT size=+1>Subtyping and Polymorphism in Object Role Modeling</FONT></B> 
+<A href="pdf/SubPoly.pdf" target="_blank">pdf file</A> (253K) 
+
+<br>Halpin, T. & Proper, H. 1995, ‘Subtyping and polymorphism in Object-Role Modeling’, </I><A 
+      href="http://www.elsevier.com/wps/find/homepage.cws_home" target="_blank">Data 
+      &amp; Knowledge Engineering</A></I>, vol. 15, North-Holland, Amsterdam,pp. 251-81.
+
+
+      <P>Although entity relationship (ER) modeling techniques are commonly used 
+      for information modeling, Object Role Modeling (ORM) techniques are 
+      becoming increasingly popular, partly because they include detailed design 
+      procedures providing guidelines for the modeler. As with the ER approach, 
+      a number of different ORM techniques exist. In this paper, we propose an 
+      integration of two theoretically well founded ORM techniques: FORM and 
+      PSM. Our main focus is on a common terminological framework, and on the 
+      notion of subtyping. Subtyping has long been an important feature of 
+      semantic approaches to conceptual schema design. It is also the concept in 
+      which FORM and PSM differ the most in their formalization. The subtyping 
+      issue is discussed from three different viewpoints covering syntactical, 
+      identification, and population issues. Finally, a wider comparison of 
+      approaches to subtyping is made, which encompasses other ER-based and 
+      ORM-based information modeling techniques, and highlights how formal 
+      subtype definitions facilitate a comprehensive specification of subtype 
+      constraints. 
+      
+      <HR>
+
+      <FONT face=Verdana>
+      <P><B><FONT size=+1>Subtyping Revisited</FONT></B></A> 
+<A href="pdf/SubtypingRevisited.pdf" target="_blank">pdf file</A> (503K)  
+<br>Halpin, T. 2007, ‘Subtyping Revisited’, <i>Proc. CAiSE’07 Workshops, vol. 1</i>, eds. B. Pernici & J. Gulla, Tapir Academic Press, pp. 131-141.
+
+      <P>In information systems modeling, the business domain being modeled often exhibits subtyping aspects that can prove challenging to implement in either relational databases or object-oriented code. In practice, some of these aspects are often handled incorrectly. This paper examines a number of subtyping issues that require special attention (e.g. derivation options, subtype rigidity, subtype migration), and discusses how to model them conceptually. Because of its richer semantics, the main graphic notation used is that of Object-Role Modeling (ORM). However, the main ideas could be adapted for UML and ER, so these are also included in the discussion. A basic implementation of the proposed approach has been prototyped in an open-source ORM tool.
+  
+       
+<hr>
+
+      <P><A name="schema"><B><FONT size=+1>Database schema transformation and 
+      optimization</FONT></B></A> 
+<A href="pdf/ooer95.pdf" target="_blank">pdf file</A> (115K) 
+<br>Halpin, T. & Proper, H. 1995, ‘Database schema transformation and optimization’, <i>Proc. OOER’95: Object-Oriented and Entity-Relationship Modeling</i>, <A href="http://www.springer.de/comp/lncs/index.html" target="_blank">Springer LNCS</A>, vol. 1021, pp. 191-203.
+
+      <P><IMG height=127 alt="Ternary Picture" hspace=5 
+      src="images/ternary_pic.png" width=334 align=right vspace=5 
+      border=0>An application structure is best modeled first as a conceptual 
+      schema, and then mapped to an internal schema for the target DBMS. 
+      Different but equivalent conceptual schemas often map to different 
+      internal schemas, so performance may be improved by applying conceptual 
+      transformations prior to the standard mapping. This paper discusses recent 
+      advances in the theory of schema transformation and optimization within 
+      the framework of ORM (Object Role Modeling). New aspects include object 
+      relativity, complex types, a high level transformation language and update 
+      distributivity. 
+<p>
+      <HR>
+
+      <P><B><FONT size=+1>Conceptual Schemas with Abstractions: Making flat 
+      conceptual schemas more comprehensible</FONT></B> 
+<A href="pdf/ConSchAb.pdf" target="_blank">pdf file</A>(427K)
+<br>Campbell, L., Halpin, T. & Proper, H. 1996 ‘Conceptual Schemas with Abstractions: making flat conceptual schemas more comprehensible’, </I><A href="http://www.elsevier.com/wps/find/homepage.cws_home" target="_blank">Data 
+      &amp; Knowledge Engineering</A></I>, vol. 20, no. 1, pp. 39-85.
+
+      <P>Flat graphical, conceptual modeling techniques are widely accepted as 
+      visually effective ways in which to specify and communicate the conceptual 
+      data requirements of an information system. Conceptual schema diagrams 
+      provide modelers with a picture of the salient structures underlying the 
+      modeled universe of discourse, in a form that can readily be understood by 
+      and communicated to users, programmers and managers. When complexity and 
+      size of applications increase, however, the success of these techniques in 
+      terms of comprehensibility and communicability deteriorates rapidly. This paper proposes a method to offset this deterioration, by adding 
+      abstraction layers to flat conceptual schemas. We present an algorithm to 
+      recursively derive higher levels of abstraction from a given (flat) 
+      conceptual schema. The driving force of this algorithm is a hierarchy of 
+      conceptual importance among the elements of the universe of discourse. 
+<IMG height=15 
+      src="images/clear.gif" width=1 border=0></FONT> 
+      <HR>
+
+	  <FONT face=Verdana>
+      <P><A name="reductionTforms"><B><FONT size=+1>Reduction Transformations in ORM</FONT></B></A> 
+<A href="pdf/ReductionTransforms.pdf" target="_blank">pdf file</A> (335K)
+      <BR>Halpin, T., Carver, A. & Owen, K. 2007, ‘Reduction Transformations in ORM’, <i>On the Move to Meaningful Internet Systems 2007: OTM 2007 Workshops</i>, eds. R. Meersman, Z. Tari, P. Herrero et al., Vilamoura, <A href="http://www.springer.de/comp/lncs/index.html" target="_blank">Springer LNCS</A> 4805, pp. 699-708.
+
+      <P>This paper proposes extensions to the Object-Role Modeling approach to support schema transformations that eliminate unneeded columns that may arise from standard relational mapping procedures. A “unique where true” variant of the external uniqueness constraint is introduced to allow roles spanned by such constraints to occur in unary fact types. This constraint is exploited to enable graphic portrayal of a new corollary to a schema transformation pattern that occurs in many business domains. An alternative transformation is introduced to optimize the same pattern, and then generalized to cater for more complex cases. The relational mapping algorithm is extended to cater for the new results, with the option of retaining the original patterns for conceptual discussion, with the transforms being applied internally in a preprocessing phase. The procedures are being implemented in NORMA, an open-source tool supporting the ORM 2 version of fact-oriented modeling.
+      
+      <hr>
+      
+      <FONT face=Verdana>
+      <P><A name="collect"><B><FONT size=+1>Modeling Collections in UML and ORM</FONT></B></A> 
+<A href="pdf/EMMSAD2000.pdf" target="_blank">pdf file</A> (106K)      
+<br>Halpin, T. 2000, ‘Modeling collections in UML and ORM’, <i>Proc. EMMSAD’00: 5th IFIP WG8.1 Int. Workshop on Evaluation of Modeling Methods in Systems Analysis and Design</i>, Kista, Sweden (June).
+
+      <P>Collection types such as sets, bags and arrays have been used as data 
+      structures in both traditional and object oriented programming. Although 
+      sets were used as record components in early database work, this practice 
+      was largely discontinued with the widespread adoption of relational 
+      databases. Object-relational and object databases once again allow 
+      database designers to embed collections as database fields. Should 
+      collections be specified directly on the conceptual schema, as mapping 
+      annotations to the conceptual schema, or only on the logical database 
+      schema? This paper discusses the pros and cons of different approaches to 
+      modeling collections. Overall it favors the annotation approach, whereby 
+      collection types are specified as adornments to the pure conceptual schema 
+      to guide the mapping process from conceptual to lower levels. The ideas 
+      are illustrated using notations from both object-oriented (Unified 
+      Modeling Language) and fact-oriented (Object-Role Modeling) approaches. 
+    
+
+<hr>
+<FONT face=Verdana>
+      <P><A name="dynamicRules"><B><FONT size=+1>Modeling Dynamic Rules in ORM</FONT></B></A>
+<A href="pdf/DynamicRules.pdf" target="_blank">pdf file</A> (165K) 
+<br>Balsters, H., Carver, A., Halpin, T. & Morgan, T. 2006, ‘Modeling Dynamic Rules in ORM’, <i>On the Move to Meaningful Internet Systems 2006: OTM 2006 Workshops</i>, eds. R. Meersman, Z. Tari, P. Herrero, Montpellier. <A href="http://www.springer.de/comp/lncs/index.html" target="_blank">Springer LNCS</A> 4278, pp. 1201-10.
+ 
+<P>This paper proposes an extension to the Object-Role Modeling approach to support formal declaration of dynamic rules. Dynamic rules differ from static rules by pertaining to properties of state transitions, rather than to the states themselves. In this paper, application of dynamic rules is restricted to so-called single-step transactions, with an old state (the input of the transaction) and a new state (the direct result of that transaction). Such restricted rules are easier to formulate (and enforce) than a constraint applying historically over all possible states. In our approach, dynamic rules specify an elementary transaction type indicating which kind of object or fact is being added, deleted or updated, and (optionally) pre-conditions relevant to the transaction, followed by a condition stating the properties of the new state, including the relation between the new state and the old state. These dynamic rules are formulated in a syntax designed to be easily validated by non-technical domain experts. 
+
+<hr>
+<FONT face=Verdana>
+      <P><B><FONT size=+1>Formal Semantics of Dynamic Rules in ORM</FONT></B></A>
+<A href="pdf/FormalDynamics.pdf" target="_blank">pdf file</A> (710K) 
+<br>Balsters, H. & Halpin, T. 2008, ‘Formal Semantics of Dynamic Rules in ORM’, <i>On the Move to Meaningful Internet Systems 2008: OTM 2008 Workshops</i>, eds. R. Meersman, Z. Tari, P. Herrero, Monterrey, Mexico. <A href="http://www.springer.de/comp/lncs/index.html" target="_blank">Springer LNCS</A> 5333, pp. 699-708.
+ 
+<P>This paper provides formal semantics for an extension of the Object-Role Modeling approach that supports declaration of dynamic rules. Dynamic rules differ from static rules by pertaining to properties of state transitions, rather than to the states themselves. In this paper we restrict application of dynamic rules to so-called single-step transactions, with an old state (the input of the transaction) and a new state (the direct result of that transaction). These dynamic rules further specify an elementary transaction type by indicating which kind of object or fact (being added, deleted or updated) is actually allowed. Dynamic rules may declare pre-conditions relevant to the transaction, and a condition stating the properties of the new state, including the relation between the new state and the old state. In this paper we provide such dynamic rules with a formal semantics based on sorted, first-order predicate logic. The key idea to our solution is the formalization of dynamic constraints as static constraints on the database transaction history.
+
+<hr>
+<FONT face=Verdana>
+      <P><B><FONT size=+1>Temporal Modeling and ORM</FONT></B></A>
+<A href="pdf/Temporal.pdf" target="_blank">pdf file</A> (728K) 
+<br>Halpin, T. 2008, ‘Temporal Modeling and ORM’, <i>On the Move to Meaningful Internet Systems 2008: OTM 2008 Workshops</i>, eds. R. Meersman, Z. Tari, P. Herrero, Monterrey, Mexico. <A href="http://www.springer.de/comp/lncs/index.html" target="_blank">Springer LNCS</A> 5333, pp. 688-98.
+ 
+<P>One difficult task in information modeling is to adequately address the impact of time. This paper briefly reviews some popular approaches for modeling temporal data and operations, then provides a conceptual framework for classifying temporal information, and proposes data model patterns to address time-impacted tasks such as modeling histories, and tracking entities across time as they migrate between roles. Special attention is given to capturing the relevant business rules. While the data modeling discussion focuses on Object-Role Modeling (ORM), many of the basic principles discussed can be adapted to other approaches such as Entity Relationship Modeling (ER) and the Unified Modeling Language (UML).
+      
+<hr>
+<FONT face=Verdana>
+      <P><A name="autoVerbalization"><B><FONT size=+1>Automated Verbalization in ORM 2</FONT></B></A> 
+<A href="pdf/AutomatedVerbalization.pdf" target="_blank">pdf file</A> (264K) 
+<br>Halpin, T. & Curland, M. 2006, ‘Automated Verbalization for ORM 2’, <i>On the Move to Meaningful Internet Systems 2006: OTM 2006 Workshops</i>, eds. R. Meersman, Z. Tari, P. Herrero et al., Montpellier. <A href="http://www.springer.de/comp/lncs/index.html" target="_blank">Springer LNCS</A> 4278, pp. 1181-90.
+
+<P>In the analysis phase of information systems development, it is important to have the conceptual schema validated by the business domain expert, to ensure that the schema accurately models the relevant aspects of the business domain. An effective way to facilitate this validation is to verbalize the schema in language that is both unambiguous and easily understood by the domain expert, who may be non-technical. Such verbalization has long been a major aspect of the Object-Role Modeling (ORM) approach, and basic support for verbalization exists in some ORM tools. Second generation ORM (ORM 2) significantly extends the expressibility of ORM models (e.g. deontic modalities, role value constraints, etc.). This paper discusses the automated support for verbalization of ORM 2 models provided by NORMA (Neumont ORM Architect), an open-source software tool that facilitates entry, validation, and mapping of ORM 2 models. NORMA supports verbalization patterns that go well beyond previous verbalization work. The verbalization for individual elements in the core ORM model is generated using an XSLT transform applied to an XML file that succinctly identifies different verbalization patterns and describes how phrases are combined to produce a readable verbalization. This paper discusses the XML patterns used to describe ORM constraints and the tightly coupled facilities that enable end-users to easily adapt the verbalization phrases to cater for different domain experts and native languages.
+      
+<hr>
+<FONT face=Verdana>
+      <P><A name="dataFed"><B><FONT size=+1>Modeling Data Federations in ORM</FONT></B></A>
+<A href="pdf/DataFederations.pdf" target="_blank">pdf file</A> (136K)
+<br>Balsters, H. & Halpin T 2007, ‘Modeling Data Federations in ORM’, <i>On the Move to Meaningful Internet Systems 2007: OTM 2007 Workshops</i>, eds. R. Meersman, Z. Tari, P. Herrero et al., Vilamoura, <A href="http://www.springer.de/comp/lncs/index.html" target="_blank">Springer LNCS</A> 4805, pp. 657-666.
+
+<P>Two major problems in constructing data federations (for example, data warehouses and database federations) concern achieving and maintaining consistency and a uniform representation of the data on the global level of the federation. The first step in creating uniform representations of data is known as data extraction, whereas data reconciliation is concerned with resolving data inconsistencies. Our approach to constructing a global conceptual schema as the result of integrating a collection of (semantically) heterogeneous component schemas is based on the concept of exact views. We show that a global schema constructed in terms of exact views integrates component schemas in such a way that the global schema is populated by exactly those instances allowed by the local schemas (and in special cases, also the other way around). In this sense, the global schema is equivalent to the set of component schemas from which the global schema is derived. This paper describes a modeling framework for data federations based on the Object-Role Modeling (ORM) approach. In particular, we show that we can represent exact views within ORM, providing the means to resolve in a combined setting data extraction and reconciliation problems on the global level of the federation.
+     
+
+<P>
+      <CENTER>
+      <HR noShade SIZE=1>
+      <A href="homepage.html"><FONT 
+      face="Arial, Helvetica, sans-serif"><B>ORM 
+      Home</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A 
+      href="overview.html">ORM in 
+      Detail</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A 
+      href="issues.html">Modeling Issues</A><BR><A 
+      href="queries.html">Conceptual 
+      Queries</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A 
+      href="uml_orm.html">UML and 
+      ORM</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A 
+      href="resources.html">Resources</A></B></FONT> 
+      <HR noShade SIZE=1>
+      <FONT size=-1><I><FONT face="Arial, Helvetica, sans-serif">All diagrams on 
+      this site were created with Microsoft Visio.</FONT></I></FONT> 
+      </CENTER></FONT>
+        </TD>
+        <TD width=10>
+        </TD>
+       </TR>
+      </TABLE>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<TITLE>Object Role Modeling</TITLE>
+	<META http-equiv="Content-Style-Type" content="text/css">
+	<SCRIPT language=javascript>
+
+	<!--//Hide from older broswers. 
+
+		if (parent == self)
+		{	var msg = "<p><HR size=4>You're looking at this page in a top-level window, rather than in a frame.<br />" + 
+				'However, this page was designed to show within a frame in the website it came from. <br /><br />' + 
+				'If you want to see the frames version of the website this page came from, <br />' + 
+				'and you have Javascript enabled in your browser or are willing to enable it for this site,<br />' + 
+				'please go to <a href="http://www.orm.net">www.orm.net<\/a>.<br /><br /><HR size=4><\/p>';
+			document.write(msg);
+ 		}
+		if(document.images){
+		sublink1Reg=new Image()
+		sublink1Reg.src="images/sublink1.gif"
+		sublink1_Hi=new Image()
+		sublink1_Hi.src="images/sublink1_hi.gif"
+
+		sublink2Reg=new Image()
+		sublink2Reg.src="images/sublink2.gif"
+		sublink2_Hi=new Image()
+		sublink2_Hi.src="images/sublink2_hi.gif"
+	
+		sublink3Reg=new Image()
+		sublink3Reg.src="images/sublink3.gif"
+		sublink3_Hi=new Image()
+		sublink3_Hi.src="images/sublink3_hi.gif"
+			
+		sublink4Reg=new Image()
+		sublink4Reg.src="images/sublink4.gif"
+		sublink4_Hi=new Image()
+		sublink4_Hi.src="images/sublink4_hi.gif"
+		
+		sublink5Reg=new Image()
+		sublink5Reg.src="images/sublink5.gif"
+		sublink5_Hi=new Image()
+		sublink5_Hi.src="images/sublink5_hi.gif"
+		}
+	
+		function _HiOn(imageName){
+			if(document.images){
+			document.images[imageName].src=eval(imageName + "_Hi.src")
+			}
+		}
+		function RegOff(imageName){
+			if(document.images){
+			document.images[imageName].src=eval(imageName + "Reg.src")
+			}
+		}
+
+	// Stop hiding. -->
+
+	</SCRIPT>
+
+</head>
+
+<body text=black vLink=#660099 link=#0000ff background="images/green.gif" bgColor=#cccc99>
+	
+	<A href="homepage.html" target="rbottom"><IMG height=82 
+      alt="ORM Logo" src="images/orm_logo.gif" width=123 
+      border=0 hspace="8"></A><BR><IMG height=13 src="images/clear.gif" 
+      width=1 border=0>  <BR>
+      
+	<A onmouseover="_HiOn('sublink1')" onmouseout="RegOff('sublink1')" 
+      href="overview.html" target="rbottom"><IMG height=42 alt="ORM Overview" 
+      src="images/sublink1.gif" width=100 border=0 
+      name=sublink1 hspace="21"></A><BR><IMG height=11 
+      src="images/clear.gif" width=1 border=0> <BR>
+
+	<A onmouseover="_HiOn('sublink2')" onmouseout="RegOff('sublink2')" 
+      href="issues.html" target="rbottom"><IMG height=42 alt="Modeling Issues" 
+      src="images/sublink2.gif" width=100 border=0 
+      name=sublink2 hspace="21"></A><BR><IMG height=11 
+      src="images/clear.gif" width=1 border=0> <BR>
+
+	<A onmouseover="_HiOn('sublink3')" onmouseout="RegOff('sublink3')" 
+      href="queries.html" target="rbottom"><IMG height=42 
+      alt="Conceptual Queries" src="images/sublink3.gif" 
+      width=100 border=0 name=sublink3 hspace="21"></A><BR><IMG height=11 
+      src="images/clear.gif" width=1 border=0> <BR>
+
+	<A onmouseover="_HiOn('sublink4')" onmouseout="RegOff('sublink4')" 
+      href="uml_orm.html" target="rbottom"><IMG height=42 alt="UML and ORM" 
+      src="images/sublink4.gif" width=100 border=0 
+      name=sublink4 hspace="21"></A><BR><IMG height=11 
+      src="images/clear.gif" width=1 border=0> <BR>
+
+	<A onmouseover="_HiOn('sublink5')" onmouseout="RegOff('sublink5')" 
+      href="resources.html" target="rbottom"><IMG height=42 alt=Resources 
+      src="images/sublink5.gif" width=100 border=0 
+      name=sublink5 hspace="21"></A><BR><IMG height=11 
+      src="images/clear.gif" width=1 border=0> 
+
+</body>
+</html>

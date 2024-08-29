@@ -1,0 +1,209 @@
+<HTML>
+<HEAD>
+	<TITLE>Object Role Modeling</TITLE>
+	
+<SCRIPT language="javascript">
+
+<!--//Hide from older broswers. 
+
+if(document.images){
+sublink1Reg=new Image()
+sublink1Reg.src="images/sublink1.gif"
+sublink1_Hi=new Image()
+sublink1_Hi.src="images/sublink1_hi.gif"
+
+sublink2Reg=new Image()
+sublink2Reg.src="images/sublink2.gif"
+sublink2_Hi=new Image()
+sublink2_Hi.src="images/sublink2_hi.gif"
+
+sublink3Reg=new Image()
+sublink3Reg.src="images/sublink3.gif"
+sublink3_Hi=new Image()
+sublink3_Hi.src="images/sublink3_hi.gif"
+
+sublink4Reg=new Image()
+sublink4Reg.src="images/sublink4.gif"
+sublink4_Hi=new Image()
+sublink4_Hi.src="images/sublink4_hi.gif"
+
+sublink5Reg=new Image()
+sublink5Reg.src="images/sublink5.gif"
+sublink5_Hi=new Image()
+sublink5_Hi.src="images/sublink5_hi.gif"
+}
+
+function _HiOn(imageName){
+	if(document.images){
+	document.images[imageName].src=eval(imageName + "_Hi.src")
+	}
+}
+function RegOff(imageName){
+	if(document.images){
+	document.images[imageName].src=eval(imageName + "Reg.src")
+	}
+}
+//-->
+
+</SCRIPT>		
+		
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="BLACK" LINK="#0000FF" VLINK="#660099">
+
+
+<TABLE BORDER="0" CELLPADDING="5" CELLSPACING="0" WIDTH=100%>
+<TR>
+
+<!--LEFT COLUMN start-->
+
+<TD WIDTH="123" VALIGN="TOP" ALIGN="LEFT" BGCOLOR="#CCCC99" BACKGROUND="images/green.gif" HEIGHT="100%">
+<A HREF="index.html"><IMG SRC="images/orm_logo.gif" WIDTH="123" HEIGHT="82" BORDER="0" ALT="ORM Logo"></A><BR><IMG SRC="images/clear.gif" WIDTH="1" HEIGHT="13" BORDER="0">
+	<CENTER>
+	<A HREF="overview.html"
+							onmouseover="_HiOn('sublink1')"
+							onmouseout="RegOff('sublink1')"><IMG SRC="images/sublink1.gif" WIDTH="100" HEIGHT="42" BORDER="0" ALT="ORM Overview" NAME="sublink1"></A><BR><IMG SRC="images/clear.gif" WIDTH="1" HEIGHT="11" BORDER="0">
+	<BR><A HREF="issues.html"
+							onmouseover="_HiOn('sublink2')"
+							onmouseout="RegOff('sublink2')"><IMG SRC="images/sublink2.gif" WIDTH="100" HEIGHT="42" BORDER="0" ALT="Modeling Issues" NAME="sublink2"></A><BR><IMG SRC="images/clear.gif" WIDTH="1" HEIGHT="11" BORDER="0">
+	<BR><A HREF="queries.html"
+							onmouseover="_HiOn('sublink3')"
+							onmouseout="RegOff('sublink3')"><IMG SRC="images/sublink3.gif" WIDTH="100" HEIGHT="42" BORDER="0" ALT="Conceptual Queries" NAME="sublink3"></A><BR><IMG SRC="images/clear.gif" WIDTH="1" HEIGHT="11" BORDER="0">
+	<BR><A HREF="uml_orm.html"
+							onmouseover="_HiOn('sublink4')"
+							onmouseout="RegOff('sublink4')"><IMG SRC="images/sublink4.gif" WIDTH="100" HEIGHT="42" BORDER="0" ALT="UML and ORM" NAME="sublink4"></A><BR><IMG SRC="images/clear.gif" WIDTH="1" HEIGHT="11" BORDER="0">
+	<BR><A HREF="resources.html"
+							onmouseover="_HiOn('sublink5')"
+							onmouseout="RegOff('sublink5')"><IMG SRC="images/sublink5.gif" WIDTH="100" HEIGHT="42" BORDER="0" ALT="Resources" NAME="sublink5"></A><BR><IMG SRC="images/clear.gif" WIDTH="1" HEIGHT="11" BORDER="0">
+	</CENTER>
+</TD>
+
+<!--LEFT COLUMN end-->
+
+<!--Gutter start-->
+
+<TD VALIGN="TOP" WIDTH="19" ALIGN=LEFT></TD>
+
+<!--Gutter end-->
+
+<!--BODY start-->
+<TD VALIGN="TOP" WIDTH=100%-123 ALIGN=LEFT>
+<IMG SRC="images/clear.gif" WIDTH="1" HEIGHT="28" BORDER="0"><BR><IMG SRC="images/orm_head.gif" WIDTH="457" HEIGHT="45" BORDER="0" ALT="Object Role Modeling - The Official Site for Conceptual Data Modeling"><BR><IMG SRC="images/clear.gif" WIDTH="1" HEIGHT="15" BORDER="0"><BR>
+
+<FONT FACE="Verdana">
+<p><i>Last updated: 2003 August 10:</i>
+
+<br><P><hr><b>What's new?</b>
+
+<p>Updated Northface University links (this page), conference details and book errata (Resources page).
+<br>Added resource description and link to the <a href = "http://www.brcommunity.com/index.shtml">Business Rules Community</a>, which publishes the <i>Business Rules Journal</i> (Resources page). This journal includes a column by Terry Halpin -- the current focus of this column is on business rule verbalization.
+<br>Added details on upcoming conferences: <a href="http://www.er.byu.edu/er2003/">ER2003</a>, <a href = "http://www.er.byu.edu/er2003/er2003cfindustry.html">ER2003 Industrial Track</a> (see Resources page).
+<br>Added Part 8 of series on using Visio for Enterprise Architects (see Resources page).
+
+
+<p>The <a href = "http://msdn.microsoft.com/theshow/">25th episode of the .NET Show</a> focused on ORM, including an interview with Terry Halpin, Pat Hallock and Dick Barden, and demonstrations of the ORM and database modeling features of Microsoft Visio for Enterprise Architects.
+
+<p><b>Software releases</b>:
+
+<p>Microsoft released <b>Visio for Enterprise Architects</b> (VEA) as a download to MSDN Universal subscribers in mid-January 2002 as part of <b>Visual Studio .NET Enterprise Architect</b> (VSEA). VSEA was generally released in CD and DVD format mid-February 2002 (see <a href = "http://msdn.microsoft.com/vstudio/prodinfo/purchase/pricing.asp">VS .NET pricing details at MSDN)</a>. Visio for Enterprise Architects includes Visio Professional 2002 as well as enhanced versions of the database and software modeling solutions formerly in Visio Enterprise 2000: its database modeling solution provides deep support for ORM and logical/physical database modeling. 
+
+<p><i>The latest release of Microsoft Visio for Enterprise Architects shipped on 2003, April 24, as part of Microsoft Visual Studio .NET 2003 Enterprise Architect edition.</i>
+
+<p>Scot Becker of Orthogonal Software has released <a href = "http://www.orthogonalsoftware.com/products.html">Orthogonal Toolbox</a>, a free add-on to Visio for Enterprise Architects that exposes most of the model details stored in an ORM source model or a logical database model as an XML layer. 
+
+<p>The former ORM tool known as <i>VisioModeler</i> is freely available as an unsupported product from Microsoft Corporation (as a 25 MB download). Models developed in VisioModeler may be exported to Microsoft's current and future ORM solutions, which are based on the Visio drawing engine. To obtain the free VisioModeler download titled "VisioModeler (Unsupported Product Edition)", click on this <a href="http://www.microsoft.com/downloads/release.asp?ReleaseID=27489">download page</a>, and click on the file MSVM31.exe to download it. The 25 MB file takes just over 2 hours to download on a 28.8 k modem. 
+
+<p><b>Books</b>:
+<br>The following book is available: Halpin, T.A. 2001, <i>Information Modeling and Relational Databases</i>, published by <a href="http://www.mkp.com">Morgan Kaufmann Publishers</a> (ISBN 1-55860-672-6). Details on this book may be found at the <a href="http://www.mkp.com/books_catalog/catalog.asp?ISBN=1-55860-672-6">book's website</a>. The book can be ordered online at the publisher's website (above) or at various other sites, for example at <a href = "http://btobshop.barnesandnoble.com/textbooks/booksearch/isbninquiry.asp?userid=68W63957LO&mscssid=PGUFW4HF4C4C9LKE9P65NWSV1QNH72A5&btob=Y&isbn=1558606726">Barnes&Noble</a> or at <a href = "http://www.amazon.com/exec/obidos/ASIN/1558606726/o/qid%3D987864198/sr%3D2-1/002-1938724-2527255">Amazon</a>. <br><br>
+
+<p><b>Update log</b>:
+<font size = -1>
+<br>2003 Aug 10: Updated Book Errata (Resources page).
+<br>2003 Jul 25: Updated Book Errata (Resources page).
+<br>2003 Jul 20: Updated Book Errata (Resources page).
+<br>2003 Jul 10: Updated Book Errata (Resources page).
+<br>2003 Jul 3: Updated conference details and Book Errata (Resources page).
+<br>2003 Jun 11: Updated Northface University links (this page). 
+<br>2003 May 25: Updated Book Errata (Resources page).
+<br>2003 Apr 26: Updated Book Errata (Resources page).
+<br>2003 Mar 2: Updated book errata (Resources page).
+<br>2003 Mar 1: Updated book errata (Resources page).
+<br>2003 Feb 8: Added details on, and link to, the Business Rules Community (Resources page). 
+<br>2003 Jan 23: Fixed link to Journal of Conceptual Modeling (Resources page).
+<br>2003 Jan 10: Added new conference details and Part 8 of series on using VEA (Resources page)
+<br>2002 Dec 13: Updated details on the free Visio viewer (this page and Resources page) 
+<br>2002 Dec 12: Updated book errata (Resources page).
+<br>2002 Nov 21: Updated book errata (Resources page).
+<br>2002 Nov 17: Added links to North Face Learning (this page etc.)
+<br>2002 Nov 1: Updated book errata (Resources page).
+<br>2002 Oct 11: Updated book errata (Resources page).
+<br>2002 Sep 26: Updated affiliation details for Terry Halpin (this page etc.).
+<br>2002 Sep 6: Updated link to Dr. ter Hofstede's website (Resources page).
+<br>2002 Sep 1: Updated p. 130 of Join Constraints paper (Modeling Issues page); Updated Book Errata (Resources page).
+<br>2002 Aug 14, 15, 17: Updated book errata (Resources page).
+<br>2002 Aug 3: Added Part 7 of series on using Visio for Enterprise Architects (VEA), details of Microsoft's offical Course 2090 on using ORM and VEA to model databases, and fixed the link to Prof. Meersman's STARlab website (Resources page).
+<br>2002 Jul 25: Updated book errata (Resources page).
+<br>2002 Jul 2: Added new paper on Join Constraints (Modeling Issues page). Updated Book Errata (Resources page).
+<br>2002 Jun 17: Updated Book Errata (Resources page).
+<br>2002 Jun 13: Added link to the ORM .NET Show (Home page and Resources page).
+<br>2002 Jun 9: Added link to Orthogonal Toolbox and Scot Becker's site (Resources page); added Part 6 of series on using VEA (Resources page); updated Book errata (Resources page).
+<br>2002 May 19: Added slides for IRMA-2002 panel session (ORM and UML page); updated book errata (Resources page).
+<br>2002 May 7: Minor updates on conference details.
+<br>2002 Apr 23: Updated EMMSAD workshop details with Call for Participation (including list of accepted papers). Updated Barnes&Noble link for book. Updated links to MSDN articles.
+<br>2002 Apr 6: Resources Page: Added links to Visio for Enterprise Architects Service Release 1, Visio 2002 SDK and the Visio Viewer technical preview. Added Part 5 of series on using VEA, and links to various ORM-related papers at Microsoft. ORM in Detail page: Added links to ORM overviews at Microsoft. 
+<br>2002 Mar 9: Updated EMMSAD2002 call for papers, and added link to Prof. Meersman's home page (Resources page).
+<br>2002 Mar 2: Added draft version of knowledge base articles for VEA (above, and on Resorces page); updated book errata (Resources page); fixed typo in Figure 9 of ORM overview paper (ORM in Detail page).
+<br>2002 Feb 17: Added MSDN link to Visual Studio .NET pricing details (above); updated book errata (Resources page)
+<br>2002 Feb 10: Added notice regarding Microsoft Tech Ed 2002, and Part 4 of series on Microsoft's new database modeling tool (see resources page).
+<br>2002 Feb 2: Updated Resources page with revisions to Book Errata, and added notice regarding my tutorial on fact-oriented modeling for the CAiSE conference to be held May 2002. 
+<br>2002 Jan 20: Updated product details on Home and Resources pages; updated the Resources page with Book Errata, and several additions/updates to Conference details.
+<br>2001 Nov 30: Updated Resources page with Part 3 of Using VSEA series, and added relevant MSDN links.
+<br>2001 Oct 13: Updated the white paper "Object Role Modeling: An Overview" to make it consistent with the version of ORM supported in Visio for Enterprise Architects (see ORM In Detail section). Updated the Resources section with information about new ORM courses.
+<br>2001 Sep 16: Updated Resources section with more details on Microsoft's new ORM tool, articles on how to use this tool, an overview paper of my new book, John Miller's Wikis, and the PDC 2001 conference. 
+<br>2001 Mar 31: Updated Resources section to include details on ORM tools, tutorial on VisioModeler, and new book information.
+<br>2001 Feb 17: Updated ISBN and weblink for new book (Resources section)
+<br>2001 Feb 13: Added the paper "Augmenting UML with Fact-orientation" (see UML and ORM section)
+</font><p>
+
+	<hr><P>
+	<FONT FACE="Arial, Helvetica, sans-serif"><IMG SRC="images/home_pic.gif" WIDTH="254" HEIGHT="130" HSPACE=5 VSPACE=5 BORDER=0 ALIGN="RIGHT" ALT="Home Picture">Object Role Modeling (ORM) is a powerful method for designing and querying database models at the conceptual level, where the application is described in terms easily understood by non-technical users. In practice, ORM data models often capture more business rules, and are easier to validate and evolve than data models in other approaches. 
+	<P>This site features a number of technical papers and articles on ORM, as well as other approaches such as the Unified Modeling Language (UML). Permission has been obtained from the relevant publishers to reproduce these publications on this website, and to make them freely downloadable. If you are unfamiliar with ORM, you may want to first review the <A HREF="overview.html">ORM in Detail</A> section of this site. Details about upcoming courses and conferences, as well as links to websites with additional ORM publications may be found in the <a href = "resources.html">Resources</a> section.  
+	<P><B>The editor</B>
+	<P><A HREF="halpin.html">Dr. Terry Halpin</A>, Distinguished Professor and Vice President of Conceptual Modeling at <a href="http://www.northface.edu">Northface University</a>, Utah, formalized the Object Role Modeling notation and has authored five books and over 100 technical papers. Visit the rest of this site to explore various conceptual data modeling topics discussed in his publications.
+	<P>
+	<TABLE WIDTH=100% BORDER="0" CELLSPACING="5" CELLPADDING="0">
+		<TR VALIGN="TOP">
+		<TD WIDTH="95" ALIGN="CENTER"><IMG SRC="images/terry2.jpg" WIDTH="95" HEIGHT="127" BORDER="0" ALT="Dr. Terry Halpin"></TD>
+		<TD WIDTH="10"><IMG SRC="images/clear.gif" WIDTH="10" HEIGHT="1" BORDER="0"></TD>
+		<TD WIDTH=100%-123 ALIGN="left"><FONT FACE="Arial, Helvetica, sans-serif">Thanks for dropping in to the Object Role Modeling web site. In addition to the technical papers on Object Role Modeling and other modeling approaches, you can find details about my new book, <I>Information Modeling and Relational Databases</I>, information about other resources, and interviews with the press.
+		<P>Information on this site will grow with time, so please revisit. If you have any feedback or suggestions, please e-mail me at <A HREF="mailto:thalpin@comcast.net">thalpin@comcast.net</A>.
+		<P>Happy reading!
+		<P>Terry</FONT><BR><IMG SRC="images/clear.gif" WIDTH="1" HEIGHT="15" BORDER="0"></TD>
+		</TR>
+
+		<TR>
+			<TD WIDTH="457" COLSPAN="3"><HR NOSHADE SIZE="1"></TD>
+		</TR>
+		
+		<TR>
+		<TD VALIGN="TOP" ALIGN="CENTER" WIDTH="95">
+		<IMG SRC="images/clear.gif" WIDTH="1" HEIGHT="20" BORDER="0"><BR><A HREF="http://www.adobe.com/prodindex/acrobat/readstep.html"><IMG SRC="images/getacro.gif" WIDTH="88" HEIGHT="31" BORDER="0"></A></TD>
+		<TD></TD>
+		<TD VALIGN="TOP" ALIGN="LEFT" WIDTH="352"><IMG SRC="images/clear.gif" WIDTH="1" HEIGHT="20" BORDER="0"><BR><FONT SIZE="-1"><FONT FACE="Arial, Helvetica, sans-serif">To view a PDF you need to install an additional piece of software called <A HREF="http://www.adobe.com/prodindex/acrobat/readstep.html">Adobe Acrobat Reader</A> from the Adobe site.</FONT><BR><IMG SRC="images/clear.gif" WIDTH="1" HEIGHT="15" BORDER="0"></FONT></TD>
+		</TR>
+		
+	</TABLE>
+	<CENTER>
+	<HR NOSHADE SIZE="1">
+	<A HREF="index.html"><FONT FACE="Arial, Helvetica, sans-serif"><B>ORM Home</A>&#160;&#160;&#160;&#160;&#160;<A HREF="overview.html">ORM in Detail</A>&#160;&#160;&#160;&#160;&#160;<A HREF="issues.html">Modeling Issues</A><BR>
+	<A HREF="queries.html">Conceptual Queries</A>&#160;&#160;&#160;&#160;&#160;<A HREF="uml_orm.html">UML and ORM</A>&#160;&#160;&#160;&#160;&#160;<A HREF="resources.html">Resources</A></B></FONT>			
+	<HR NOSHADE SIZE="1"><FONT SIZE="-1"><I><FONT FACE="Arial, Helvetica, sans-serif">All diagrams on this site were created with Microsoft Visio.</FONT></I></FONT>
+	</CENTER>
+</TD>
+</TR>
+</TABLE>
+<!--BODY end-->
+
+</BODY>
+</HTML>
+

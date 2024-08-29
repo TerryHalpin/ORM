@@ -1,0 +1,194 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<TITLE>ORM in Detail</TITLE>
+	<META http-equiv="Content-Style-Type" content="text/css">
+	<SCRIPT language="JavaScript" type="text/javascript">
+	<!--  This HTML-style commenting-out hides the script from older, Javascript-incapable browsers
+
+		if (parent == self){  //The file is being shown in a top-level window instead of in a frame
+			var msg = "<p><HR size=4>You're looking at this page in a top-level window, rather than in a frame.<br />" + 
+				'However, this page was designed to show within a frame in the website it came from. <br /><br />' + 
+				'If you want to see the frames version of the website this page came from, <br />' + 
+				'and you have Javascript enabled in your browser or are willing to enable it for this site,<br />' + 
+				'please go to <a href="http://www.orm.net">www.orm.net<\/a>.<br /><br /><HR size=4><\/p>';
+			document.write(msg);
+		} 
+		else
+		{	parent.left.location.replace("left_menu1.htm");
+			parent.rtop.location.replace("top_menu1.htm");
+		}
+
+	// End hiding. -->
+	</SCRIPT>
+
+	<NOSCRIPT>
+		<p><HR size=4> 
+		This page is intended to fill the main frame in our frames website <a href="http://www.orm.net">www.orm.net</a>.<br />
+		However, this website is designed for Web browsers that have Javascript enabled.<br />
+		Your browser does not have Javascript enabled: either it does not understand Javascript or it is set to disable such scripts.<br /><br />
+		We encourage you to enable your browser to handle Javascript, for proper viewing of this site.<br /><br />
+		<HR size=4></p>
+	</NOSCRIPT>
+
+</head>
+<!-- body bgcolor="#ffffdd" onload="self.focus();" -->
+<body bgcolor="#ffffff" onload="self.focus();">
+	<A name="intro"></A>
+	
+	<TABLE cellSpacing=5 cellPadding=0 width="100%" border=0>
+	 <TR>
+	  <TD width=10>
+	  </TD>
+	  <TD>
+	  
+	
+	<IMG height=5 src="images/clear.gif" width=1 
+      border=0><BR /><FONT face="Verdana, Helvetica, sans-serif"><IMG height=235 
+      alt="ORM Picture" hspace=5 src="images/orm_pic2.png" 
+      width=451 align=right vspace=5 border=0> 
+      <P>This section provides a basic overview of Object Role Modeling (ORM), 
+      through white papers, articles and a slide presentation. The relationship 
+      between ORM and the Entity Relationship (ER) approach is also discussed. To view a PDF file you may need to install an additional piece of software called <A 
+            href="http://www.adobe.com/prodindex/acrobat/readstep.html" target="_blank">Adobe 
+            Acrobat Reader</A> from the Adobe site.
+      <P>For an in-depth treatment of ORM, see Halpin, T. & Morgan T. 2008, <I>Information 
+      Modeling and Relational Databases</I>, Second Edition, published by <A 
+      href="http://www.mkp.com/" target="_blank">Morgan Kaufmann Publishers</A> (ISBN: 978-0-12-373568-3). 
+      Details on this book are available on the <a href="resources.html#books">
+      Resources page</A>. <BR><BR><BR>
+      <HR>
+
+<P><A name="ORM2"><B><FONT size=+1>Object-Role Modeling version 2 (ORM 2)</FONT></B></A> 
+<A href="pdf/EncDBS.pdf" target="_blank">pdf file</A> (123K) 
+<br>Halpin, T. 2009, &lsquo;Object-Role modeling&rsquo;, <a
+href="http://www.springer.com/computer/database+management+%26+information+retrieval/book/978-0-387-49616-0"><i>Encyclopedia of Database Systems</i></a>, Editors-in-chief: Liu, Ling; &Ouml;zsu, M. Tamer, Springer, 2009. (print and online)</p>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<p>This entry on Object-Role Modeling will soon be published in the <i>Encyclopedia of Database Systems</i> by Springer. The Encyclopedia, under the editorial guidance of Ling Liu and M. Tamer &Ouml;zsu, will be a multiple volume, comprehensive, and authoritative reference on databases, data management, and database systems. Since it will be available in both print and online formats, researchers, students, and practitioners will benefit from advanced search functionality and convenient interlinking possibilities with related online content. The Encyclopedia&#8217;s online version will be accessible on the SpringerLink platform.
+<hr>
+
+<FONT face=Verdana>
+      <P><A name="ORM2"><B><FONT size=+1>ORM 2</FONT></B></A>
+<A href="pdf/ORM2.pdf" target="_blank">pdf file</A> (165K) 
+<br>Halpin, T. 2005, &lsquo;ORM 2&rsquo;, <i>On the Move to Meaningful Internet Systems 2005: OTM 2005 Workshops</i>, eds R. Meersman, Z. Tari, P. Herrero et al., Cyprus. <A href="http://www.springer.de/comp/lncs/index.html" target="_blank">Springer LNCS</A> 3762, pp 676-87.
+ 
+<P>Object-role Modeling (ORM) is a fact-oriented modeling approach for specifying, transforming, and querying information at a conceptual level. Unlike Entity-Relationship modeling and Unified Modeling Language class diagrams, fact-oriented modeling is attribute-free, treating all elementary facts as relationships. For information modeling, fact-oriented graphical notations are typically far more expressive than other notations. Introduced 30 years ago, ORM has evolved into closely related dialects, and is supported by industrial and academic tools. Industrial experience has identified ways to improve cur-rent ORM languages (graphical and textual) and associated tools. A project is now under way to provide tool support for a second generation ORM (called ORM 2), that has significant advances over current ORM technology. This paper provides an overview of, and motivation for, the enhancements introduced by ORM 2, and discusses an open-source ORM 2 tool under development.
+<hr>
+
+      <P><A name="ORM1"><B><FONT size=+1>Object Role Modeling: An Overview</FONT></B></A> 
+<A href="pdf/ORMwhitePaper.pdf" target="_blank">pdf file</A> (405K)   
+<P>This white paper provides an overview of Object Role Modeling (ORM), 
+      using a case study to illustrate the main ideas. The steps used to design 
+      a conceptual schema for an information system are first explained in some 
+      detail. To help communicate the ideas, some mistakes are deliberately 
+      made. Checking procedures within the design method are later used to 
+      remove these errors. A simple example is included to show how the 
+      conceptual design may be &ldquo;optimized&rdquo; for relational database systems by 
+      applying a transformation. An algorithm for mapping this design to a 
+      normalized, relational database schema is then outlined. Finally, the 
+      paper gives a brief sketch of how ORM can be used as a sound basis for 
+      conceptual queries, object oriented modeling, and process/event modeling. 
+      
+      <P>Microsoft has also published a <A   href="http://msdn2.microsoft.com/en-us/library/aa290383.aspx" target="_blank">Revised 
+      version of the above ORM overview</A>.
+      <HR>
+
+      <P><B><FONT size=+1>Object Role Modeling (ORM/NIAM)</FONT></B> 
+<A href="pdf/springer.pdf" target="_blank">pdf file</A> (125K) 
+<br>Halpin, T. 1998, &lsquo;Object-Role Modeling (ORM/NIAM)&rsquo;, <i>Handbook on Architectures of Information Systems</i>, <A href="http://www.springer.de/cgi-bin/search_book.pl?isbn=3-540-64453-9" target="_top">Springer</A>, Heidelberg, Ch. 4.  
+
+      <P>Object Role Modeling (ORM) is a method for modeling and querying an 
+      information system at the conceptual level, and mapping between conceptual 
+      and logical (e.g. relational) levels. ORM comes in various flavors, 
+      including NIAM (Natural language Information Analysis Method). This 
+      article provides an overview of ORM, and notes its advantages over entity 
+      relationship and traditional object oriented modeling. <BR>This paper and 
+      the Object Role Modeling Overview paper overlap substantially; however, 
+      the historical details, symbol summary, and references provide additional 
+      material. 
+ <HR>
+     
+      <P><B><FONT size=+1>Business Rules and Object Role Modeling</FONT></B></A> 
+<A href="pdf/dppd.pdf" target="_blank">pdf file</A> (407K) 
+<br>Halpin, T. 1996, &lsquo;Business rules and Object-Role modeling&rsquo;, <i>Database Programming and Design</i>, vol. 9, no. 10 (Oct. 1996), pp. 66-72.
+
+      <P>This article provides a gentle introduction to Object Role Modeling 
+      (ORM), explaining its advantages over entity relationship and object 
+      oriented approaches for capturing and validating business rules with 
+      subject matter experts. The ORM attribute-free, mixfix predicate approach 
+      simplifies verbalization, multiple instantiation and schema evolution, and 
+      its rich constraint language enables many rules to be captured graphically 
+      and easily validated. The article includes simple examples to illustrate 
+      these advantages. 
+<HR>
+      
+      <p><A name="ER_ORM"><B><FONT size=+1>Entity Relationship modeling from an ORM perspective: 
+      Part 1</FONT></B></A> 
+<A href="pdf/JCM11.pdf" target="_blank">pdf file</A> (80K) 
+<br>Halpin, T. 1999, &lsquo;Entity relationship modeling from an ORM perspective: Part 1&rsquo;, <i>Journal of Conceptual 
+      Modeling</I>, no. 11, www.inconcept.com.
+
+
+      <P>This paper is the first in a series of articles examining data modeling 
+      in the Entity relationship (ER) approach from the perspective of Object 
+      Role Modeing (ORM). After a brief historical introduction, this article 
+      examines basic aspects of the Barker notation for ER. 
+<HR>
+      
+<P><B><FONT size=+1>Entity Relationship modeling from an ORM perspective: 
+      Part 2</FONT></B> 
+<A href="pdf/JCM12.pdf" target="_blank">pdf file</A> (58K) 
+<br>Halpin, T. 2000, &lsquo;Entity relationship modeling from an ORM perspective: Part 2&rsquo;, <i>Journal of Conceptual Modeling</i>, no. 12, www.inconcept.com.
+
+      <P>This is the second in a series of articles examining data modeling in the 
+      Entity relationship (ER) approach from the perspective of Object Role 
+      Modeing (ORM). This paper completes a basic review of the Barker notation 
+      for ER.  
+<HR>
+
+<P><B><FONT size=+1>Entity Relationship modeling from an ORM perspective: 
+      Part 3</FONT></B> 
+<A href="pdf/JCM13.pdf" target="_blank">pdf file</A> (55K) 
+<br>Halpin, T. 2000, &lsquo;Entity relationship modeling from an ORM perspective: Part 3&rsquo;, <i>Journal of Conceptual Modeling</i>, no. 13, www.inconcept.com.
+
+      <P>This is the third in a series of articles examining data modeling in the 
+      Entity relationship (ER) approach from the perspective of Object Role 
+      Modeing (ORM). This paper discusses the Information Engineering (IE) 
+      notation for ER.   
+<HR>
+      
+      <P><A name="B-R_FO_OO"><B><FONT size=+1>Modeling business rules using fact-orientation and 
+      object-orientation</FONT></B></A> <BR><I>This PowerPoint presentation was 
+      delivered at the Business Rules Conference hosted by the <A 
+      href="http://www.halcyon.com/drma/" target="_top">Data Resource Management 
+      Association</A> in May, 1999. The original DRMA99.pps file (926kb) has 
+      been zipped for downloading (still a hefty 798kb), and needs to be 
+      unzipped (e.g. using Winzip) before it can be viewed. </I>
+      <P><A href="pdf/drma99.zip" target="_blank">DRMA99 slide presentation 
+      (798k)</A> 
+      <P></FONT>
+      <CENTER>
+      <HR noShade SIZE=1>
+      <A href="homepage.html"><FONT 
+      face="Arial, Helvetica, sans-serif"><B>ORM 
+      Home</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A 
+      href="overview.html">ORM in 
+      Detail</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A 
+      href="issues.html">Modeling Issues</A><BR><A 
+      href="queries.html">Conceptual 
+      Queries</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A 
+      href="uml_orm.html">UML and 
+      ORM</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A 
+      href="resources.html">Resources</A></B></FONT> 
+      <HR noShade SIZE=1>
+      <FONT size=-1><I><FONT face="Arial, Helvetica, sans-serif">All diagrams on 
+      this site were created with Microsoft Visio.</FONT></I></FONT> 
+  	</CENTER>
+        </TD>
+        <TD width=10>
+        </TD>
+       </TR>
+      </TABLE>
+</body>
+</html>
