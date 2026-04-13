@@ -780,7 +780,7 @@ mso-ansi-language:EN-AU;mso-bidi-font-weight:bold">(Morgan Kaufmann)<o:p></o:p><
 &quot;Verdana&quot;,sans-serif;mso-font-kerning:1.0pt;mso-ansi-language:EN-AU"><o:p>&nbsp;</o:p></span></i></b></p>
 
 <p class="MsoNormal" align="center" style="text-align:center"><span style="font-family:&quot;Verdana&quot;,sans-serif;mso-font-kerning:1.0pt;mso-ansi-language:
-EN-AU;mso-bidi-font-weight:bold">Last updated: 2025 October 5</span><span lang="EN-US" style="font-family:&quot;Verdana&quot;,sans-serif"><o:p></o:p></span></p>
+EN-AU;mso-bidi-font-weight:bold">Last updated: 2026 April 13</span><span lang="EN-US" style="font-family:&quot;Verdana&quot;,sans-serif"><o:p></o:p></span></p>
 
 <p class="MsoNormal"><span lang="EN-US" style="font-size:8.0pt;mso-bidi-font-size:
 10.0pt"><o:p>&nbsp;</o:p></span></p>
@@ -812,13 +812,33 @@ symbol "-->" means "is replaced by".<o:p></o:p></span></p>
 
 <p class="MsoBodyText3"><span lang="EN-US" style="font-family:&quot;Verdana&quot;,sans-serif">Page 40, question 3, insert the following as the third sentence: "Here,the marital status <i>"single" is used in the sense of "never married"</i>. <o:p></o:p></span></p>    
 <p>
- 
+     
+ <p class="MsoBodyText3"><span lang="EN-US" style="font-family:&quot;Verdana&quot;,sans-serif">
+ p. 247, paragraphs 5 and 6, replace by:
+       "The quantifier "<b>Each</b>" normally precedes the name of the subtype being defined, as shown in Figure 6.39. The operator "<b>is defined as a</b>" or "<b>is defined as an</b>" is used after the supertype name.
+      Asserted subtypes use unqualified "<b>is a</b>" connections. For example, asserting that MalePatient is a subtype of Patient, simply means <b>Each</b> MalePatient is a Patient. Derived and semiderived subtypes require subtyping definitions that add conditions to the "<b>is a</b>" connection. For example, <b>Each</b> MalePatient <b>is defined as a</b> Patient <b>who</b> is of Gender 'M'. If desired, but only within a subtype derivation rule, "<b>is defined as a</b>" and "<b>is defined as an</b>" may be shortened to "<b>is a</b>" and <b>"is an</b>".
+<p> 
+       <p class="MsoBodyText3"><span lang="EN-US" style="font-family:&quot;Verdana&quot;,sans-serif">Page 248, , para. 5, replace by: "In Figure 6.39, the mutual exclusion between MalePatient and FemalePatient is implied by their definitions, together with the uniqueness constraint on the gender predicate (<b>Each</b> Patient is of <b>at most one</b></> Gender). The constraint that MalePatient and FemalePatient exhaust Patient is implied by the subtype definitions, the {'M','F'} constraint, and the mandatory role on the gender predicate (<b>Each</b> Patient is of <b>at least one</b> Gender).
+
+      In ORM, derived subtypes are well defined and all relevant constraints on defining predicates must be declared (graphically or textually). Hence, any exclusion or exhaustion constraints on derived subtypes are always implied. In ORM, all derived constraints are displayed in green, as in Figure 6.39. This notation is supported in the Visio ORM stencil, but is not yet supported in the NORMA tool." 
+<p>
+  <p>
 <p class="MsoBodyText3"><span lang="EN-US" style="font-family:&quot;Verdana&quot;,sans-serif">Page 288, Figure 7.21: Symmetric and antisymmetric relations should overlap (as purely reflexive relations are their intersection), and strongly intransitive relations should be a proper subset of acyclic relations. Here is an updated version of Figure 7_21:<o:p></o:p></span></p>   <p></p>   
 <p></p> <img src="images/Fig7_21new.jpg" width="686" height="446" alt="new figure 7_21" title = ""/>    
 <p></p>    
 
+<p>
+<p class="MsoBodyText3"><span lang="EN-US" style="font-family:&quot;Verdana&quot;,sans-serif">Page 262, Fig. 6.56: Change color of Xor constraint to green.  
+<p>
+
 <p class="MsoBodyText3"><span lang="EN-US" style="font-family:&quot;Verdana&quot;,sans-serif">Page 289, sentence 1: "constraints" --> "constraints on non-empty relations".<o:p></o:p></span></p>
-<p> 
+<p>  <p class="MsoBodyText3"><span lang="EN-US" style="font-family:&quot;Verdana&quot;,sans-serif">Page 336, Fig, 8.41: Change color of exclusion constraint to green.
+<p>
+<p>  <p class="MsoBodyText3"><span lang="EN-US" style="font-family:&quot;Verdana&quot;,sans-serif">Page 336, Fig, 8.42: Change color of Xor constraint to green. 
+<p>
+
+<p class="MsoBodyText3"><span lang="EN-US" style="font-family:&quot;Verdana&quot;,sans-serif">Page 341, Fig. 8.50: Change color of Xor constraint to green. 
+<p>
 
 <p class="MsoBodyText3"><span lang="EN-US" style="font-family:&quot;Verdana&quot;,sans-serif">Page 428, paragraph 4, append to the first sentence ending with "Chapter 2": "where "single" is used in the sense of "never married". <o:p></o:p></span></p>  
 <p class="MsoBodyText3"><span lang="EN-US" style="font-family:&quot;Verdana&quot;,sans-serif"><o:p>&nbsp;</o:p></span></p>        
@@ -828,7 +848,16 @@ symbol "-->" means "is replaced by".<o:p></o:p></span></p>
 
 <p class="MsoBodyText3"><span lang="EN-US" style="font-family:&quot;Verdana&quot;,sans-serif">Page 459, Figure 10.60(a):  Add the predicate text "is monolingual" to the unary predicate.<o:p></o:p></span></p>     
 <p>   
+<p class="MsoBodyText3"><span lang="EN-US" style="font-family:&quot;Verdana&quot;,sans-serif">p. 506, Fig. 11.25: Change color of Xor constraint to green.
+<p>
+<p class="MsoBodyText3"><span lang="EN-US" style="font-family:&quot;Verdana&quot;,sans-serif">p. 507, Fig. 11.26: Change color of Xor constraint to green. 
+<p>
 <p class="MsoBodyText3"><span lang="EN-US" style="font-family:&quot;Verdana&quot;,sans-serif">Page 521, Figure 13.35(c): change the colour of the predicate reading "smokes" to black. <i>Note</i>: the role of the objectifed unary applies only to its positve instances.<o:p></o:p></span></p>     
+<p>
+<p class="MsoBodyText3"><span lang="EN-US" style="font-family:&quot;Verdana&quot;,sans-serif">Page 524, Fig. 11.38: Change color of Xor constraint to green.  
+<p>
+
+<p class="MsoBodyText3"><span lang="EN-US" style="font-family:&quot;Verdana&quot;,sans-serif">Page 525, Fig. 11.39: Change color of Xor constraint to green.
 <p>
 <p class="MsoBodyText3"><span lang="EN-US" style="font-family:&quot;Verdana&quot;,sans-serif">Page 792, Figure 15.22(b): "F(in Y)" --> "F[in Y]".<o:p></o:p></span></p>     
 
